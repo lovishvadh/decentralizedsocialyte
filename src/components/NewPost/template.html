@@ -1,0 +1,31 @@
+<div class="card-post">
+    <div class="row">
+        <div class="col-xs-3 col-sm-2">
+            <a href="/profile" title="Profile">
+                <img :src="img" alt="User name" class="img-circle img-user">
+            </a>
+        </div>
+        <div class="col-xs-9 col-sm-10 info-user">
+            <h3><a href="/profile" title="Profile">{{ name }}</a></h3>
+            <p><i>{{ timestamp }}</i><i>#{{ postNumber }}</i></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 data-post">
+            <p>{{ data }}</p>
+            <div class="reaction">
+                &#x2764; {{ likes }} &#x1F603; {{ dislikes }}
+            </div>
+            <div class="comments">
+                <div class="more-comments">View more comments</div>
+                <ul>
+                    <li><b>User1</b> Lorem Ipsum Dolor si amet</li>
+                </ul>
+                <form>
+                    <input type="text" class="form-control" placeholder="Add a comment">
+                    <button type="submit" v-on:click="addComment">Add Comment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

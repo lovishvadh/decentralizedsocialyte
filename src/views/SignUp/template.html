@@ -1,0 +1,35 @@
+<div id="login-page">
+    <div>{{ errorMessage }} </div>
+    <div class="form-box">
+        <div class="form-logo">
+            <p class="text-center">SIGN UP
+                <img src="" alt="logo">
+            </p>
+        </div>
+        <form>
+            <input type="Name" class="form-control" placeholder="Name" v-model='formValue.name'>
+            <input type="email" class="form-control" placeholder="Email" v-model='formValue.email'>
+            <input type="text" class="form-control" placeholder="Username" v-model='formValue.un'>
+            <input type="password" class="form-control" placeholder="Password" v-model='formValue.pass'>
+            <input type="password" class="form-control" placeholder="Confirm Password" v-model='formValue.cnPass'>
+            <input type="submit" class="btn btn-social" value="Sign Up" v-on:click="handleSubmit">
+        </form>
+    </div>
+    <!--Close form-box-->
+
+    <footer class="login-footer text-center">
+        <div class="col-xs-3">
+            <a class="login-action" href="" title="">SOCIALYTE</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="login-action" href="" title="">GLADUS</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="login-action" href="" title="">LOVISH</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="login-action" href="" title="">AMARJEET</a>
+        </div>
+    </footer>
+
+</div>

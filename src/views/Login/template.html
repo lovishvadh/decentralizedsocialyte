@@ -1,0 +1,38 @@
+<div id="login-page">
+    <router-view />
+    <div class="form-box">
+        <div class="form-logo">
+            <p class="text-center">LOG IN
+                <img src="img/logo.png" alt="logo">
+            </p>
+        </div>
+        <form>
+            <input type="text" class="form-control" placeholder="Username" v-model="formValue.un">
+            <input type="password" class="form-control" placeholder="Password" v-model="formValue.pass">
+            <input type="submit" class="btn btn-social" value="LOGIN" v-on:click="handleSubmit">
+        </form>
+        <a href="#" class="login-action" title="Forgot password">
+            <p>Forgot your password?</p>
+        </a>
+        <router-link to="/signup" class="login-action" title="Sign in">
+            <p>New User?</p>
+        </router-link>
+    </div>
+    <!--Close form-box-->
+
+    <footer class="login-footer text-center">
+        <div class="col-xs-3">
+            <a class="login-action" href="" title="">SOCIALYTE</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="login-action" href="" title="">GLADUS</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="login-action" href="" title="">LOVISH</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="login-action" href="" title="">AMARJEET</a>
+        </div>
+    </footer>
+
+</div>
